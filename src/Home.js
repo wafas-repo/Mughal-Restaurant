@@ -16,9 +16,17 @@ function renderHome() {
         const p = document.createElement("p");
         p.textContent = "Spicy, rich, flavorful and diverse. We welcome you to a culinary journey through traditional recipes and fine cuisine.";
 
+        const menu = document.createElement('button');
+        menu.innerText = "MENU"
+
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+
         description_container.appendChild(h1)
         description_container.appendChild(p)
-        main_container.appendChild(description_container);
+        description_container.appendChild(menu)
+        overlay.appendChild(description_container)
+        main_container.appendChild(overlay);
         
         main.appendChild(main_container);
 
@@ -39,28 +47,56 @@ function renderHome() {
         servicesTitle.innerText = "Our Services"
         servicesDiv.append(servicesTitle);
 
+        const cen = document.createElement('div');
+        cen.classList.add("cen")
+
+        const service1 = document.createElement('div')
+        service1.classList.add("service")
+        const iDinein = document.createElement('i')
+        iDinein.classList.add('fa', 'fa-solid', 'fa-utensils')
+        const dineIn = document.createElement('h3');
+        dineIn.innerText = "Dine In"
+        const pDineIn =  document.createElement('p')
+        pDineIn.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.'
+
+        const service2 = document.createElement('div')
+        service2.classList.add("service")
+        const iTakeout = document.createElement('i')
+        iTakeout.classList.add('fas', 'fa-shopping-bag')
+        const takeout = document.createElement('h3');
+        takeout.innerText = "Take-out"
+        const pTakeout =  document.createElement('p')
+        pTakeout.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.'
+
+        const service3 = document.createElement('div')
+        service3.classList.add("service")
+        const iDelivery = document.createElement('i')
+        iDelivery.classList.add('fa', 'fa-solid', 'fa-car')
+        const delivery = document.createElement('h3');
+        delivery.innerText = "Delivery"
+        const pDelivery =  document.createElement('p')
+        pDelivery.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.'
+
+
+        service1.appendChild(iDinein);
+        service1.appendChild(dineIn)
+        service1.appendChild(pDineIn)
+
+        service2.appendChild(iTakeout);
+        service2.appendChild(takeout)
+        service2.appendChild(pTakeout)
+
+        service3.appendChild(iDelivery);
+        service3.appendChild(delivery)
+        service3.appendChild(pDelivery)
+        
+        cen.appendChild(service1)
+        cen.appendChild(service2)
+        cen.appendChild(service3)
+        servicesDiv.appendChild(cen)
+
         section.appendChild(servicesDiv);
 
-        const pArray = ["Dine-in",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.",
-        "Take-Out",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.",
-        "Delivery", 
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et."];
-
-        for (let j = 0; j < pArray.length; j++) {
-                let pTag = document.createElement('p');
-                servicesDiv.append(pTag);
-                pTag.textContent = pArray[j];
-        }
-
-        const utensils = document.createElement('div');
-        utensils.classList.add('services-box-icon')
-        const iutensils = document.createElement('i');
-        iutensils.classList.add("fa-solid", "fa-utensils");
-        utensils.appendChild(iutensils);
-
-        section.appendChild(utensils)
 
         main.appendChild(section)
 
