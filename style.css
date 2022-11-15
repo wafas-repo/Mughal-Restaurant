@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -34,6 +35,10 @@ nav {
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
+}
+
+.nav-links a:hover{
+    color: goldenrod;
 }
 
 .burger {
@@ -100,6 +105,18 @@ nav {
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
 .main {
     height: 100%; 
 }
@@ -157,9 +174,6 @@ button:hover {
 }
 footer {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background: #444;
     height: auto;
     width: 100vw;
@@ -284,6 +298,61 @@ section {
     padding-right: 4px;
     margin: 0px 20px 0px 20px;
 }
+
+#about {
+    min-height: 90vh;
+    background-color: #aaa;
+}
+
+#about h2 {
+    font-size: 2rem;
+    padding-top: 20vh;
+    padding-left: 53vh;
+}
+
+#about-para-1 {
+    text-align: center; 
+
+}
+
+.about-para-2 {
+
+    text-align: center;
+    padding-bottom: 10vh; 
+
+}
+
+#parasDiv {
+
+    width: 40%;
+}
+
+#paraDiv1 {
+    width: 40%;
+    font-size: 1.25rem;
+    margin-left: 15vh;
+    margin-top: 5vh;
+
+}
+
+#paraDiv2 {
+    width: 50%;
+    font-size: 1.25rem;
+    margin-left: 5vh;
+    margin-top: 5vh;
+}
+
+#about hr {
+    width: 20vh;
+    clear: left;
+    margin-left: 45vh;
+}
+
+#imgDiv {
+    text-align: right;
+}
+
+
 
 
 
