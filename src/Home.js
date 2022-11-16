@@ -39,7 +39,7 @@ function renderHome() {
         aboutDiv.id = 'about';
 
         const aboutTitle = document.createElement('h2');
-        aboutTitle.innerText = "About Us";
+        aboutTitle.innerText = "ABOUT US";
 
         const imgDiv = document.createElement('div');
         const outlineDiv = document.createElement('div');
@@ -47,7 +47,7 @@ function renderHome() {
         outlineDiv.id = 'outlineDiv'
         outlineDiv2.id = 'outlineDiv2'
         imgDiv.id = 'imgDiv'
-        const img = new Image(400, 500); 
+        const img = new Image(500, 600); 
         img.src = "img/restaurant.jpg"
         img.id = "img2"
         imgDiv.appendChild(img);
