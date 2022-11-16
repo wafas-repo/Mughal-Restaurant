@@ -11,6 +11,7 @@ nav {
     align-items: center;
     height: 10vh;
     background-color: black;
+    z-index: 999;
 }
 
 .brand {
@@ -301,13 +302,11 @@ section {
 
 #about {
     min-height: 90vh;
-    background-color: #aaa;
 }
 
 #about h2 {
     font-size: 2rem;
-    padding-top: 20vh;
-    padding-left: 53vh;
+    padding-left: 54vh;
 }
 
 #about-para-1 {
@@ -323,12 +322,14 @@ section {
 }
 
 #parasDiv {
+    width: 50%;
+    float: left;
+    padding-top: 20vh;
 
-    width: 40%;
 }
 
 #paraDiv1 {
-    width: 40%;
+    /* width: 40%; */
     font-size: 1.25rem;
     margin-left: 15vh;
     margin-top: 5vh;
@@ -336,21 +337,51 @@ section {
 }
 
 #paraDiv2 {
-    width: 50%;
+    /* width: 50%; */
     font-size: 1.25rem;
-    margin-left: 5vh;
+    margin-left: 15vh;
     margin-top: 5vh;
 }
 
 #about hr {
-    width: 20vh;
+    width: 10vh;
     clear: left;
-    margin-left: 45vh;
+    margin-left: 42vh;
+    background: goldenrod;
+    height: 2px;
+    border: goldenrod;
 }
 
 #imgDiv {
     text-align: right;
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    margin-top: 15vh;
+    margin-left: 25vh;
 }
+
+
+#outlineDiv {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    border: 2px solid #dba931;
+    top: 20px;
+    left: 20px;
+    z-index: -10;
+}
+
+#outlineDiv2 {
+    position: absolute;
+    width: 380px;
+    height: 500px;
+    border: 2px solid #dba931;
+    top: 35px;
+    left: 30px;
+    z-index: -10;
+}
+
 
 
 

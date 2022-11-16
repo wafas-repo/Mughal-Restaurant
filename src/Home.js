@@ -42,11 +42,17 @@ function renderHome() {
         aboutTitle.innerText = "About Us";
 
         const imgDiv = document.createElement('div');
+        const outlineDiv = document.createElement('div');
+        const outlineDiv2 = document.createElement('div');
+        outlineDiv.id = 'outlineDiv'
+        outlineDiv2.id = 'outlineDiv2'
         imgDiv.id = 'imgDiv'
-        const img = new Image(300, 500); 
+        const img = new Image(400, 500); 
         img.src = "img/restaurant.jpg"
         img.id = "img2"
         imgDiv.appendChild(img);
+        imgDiv.appendChild(outlineDiv)
+        imgDiv.appendChild(outlineDiv2)
 
         const paras = document.createElement('div');
         paras.id = 'parasDiv';
@@ -61,7 +67,7 @@ function renderHome() {
         const aboutP1 = document.createElement('p');
         aboutP1.id = 'about-para-1';
 
-        aboutP1.innerHTML = "Reminiscing over the Grand Banquets and fanfare of 'Mighty Mughals' of Avadh,<br>'Noble Nizams' of Hyderabad, <br> 'Magnificent Maharajas' of Punjab and 'Royal Rajputs' of Rajputana,<br>we welcome you to experience a culinary journey through recipes covering these four grand regions from the Golden Era." 
+        aboutP1.innerHTML = "Reminiscing over the Grand Banquets and fanfare of<br> 'Mighty Mughals' of Avadh, 'Noble Nizams' of Hyderabad, <br> 'Magnificent Maharajas' of Punjab and 'Royal Rajputs' of Rajputana,<br>we welcome you to experience a culinary journey through recipes<br>  covering these four grand regions from the Golden Era." 
 
         const aboutP2 = document.createElement('p');
         aboutP2.classList.add('about-para-2');
@@ -77,8 +83,10 @@ function renderHome() {
 
         para2.appendChild(hr);
 
+        paras.appendChild(aboutTitle)
         paras.appendChild(para1)
         paras.appendChild(para2)
+
 
         aboutDiv.appendChild(paras)
 
