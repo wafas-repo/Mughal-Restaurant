@@ -30,10 +30,74 @@ function renderHome() {
         
         main.appendChild(main_container);
 
+
+        // <---------------> //
+
         const section2 = document.createElement('section');
 
         const aboutDiv = document.createElement('div');
         aboutDiv.id = 'about';
+
+        const aboutTitle = document.createElement('h2');
+        aboutTitle.innerText = "About Us";
+
+        const imgDiv = document.createElement('div');
+        const outlineDiv = document.createElement('div');
+        const outlineDiv2 = document.createElement('div');
+        outlineDiv.id = 'outlineDiv'
+        outlineDiv2.id = 'outlineDiv2'
+        imgDiv.id = 'imgDiv'
+        const img = new Image(400, 500); 
+        img.src = "img/restaurant.jpg"
+        img.id = "img2"
+        imgDiv.appendChild(img);
+        imgDiv.appendChild(outlineDiv)
+        imgDiv.appendChild(outlineDiv2)
+
+        const paras = document.createElement('div');
+        paras.id = 'parasDiv';
+
+
+        const para1 = document.createElement('div');
+        para1.id = 'paraDiv1';
+
+        const para2 = document.createElement('div');
+        para2.id = 'paraDiv2';
+
+        const aboutP1 = document.createElement('p');
+        aboutP1.id = 'about-para-1';
+
+        aboutP1.innerHTML = "Reminiscing over the Grand Banquets and fanfare of<br> 'Mighty Mughals' of Avadh, 'Noble Nizams' of Hyderabad, <br> 'Magnificent Maharajas' of Punjab and 'Royal Rajputs' of Rajputana,<br>we welcome you to experience a culinary journey through recipes<br>  covering these four grand regions from the Golden Era." 
+
+        const aboutP2 = document.createElement('p');
+        aboutP2.classList.add('about-para-2');
+
+        aboutP2.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco <br> laboris nisi ut aliquip ex ea commodo consequat. "
+
+        const hr = document.createElement('hr');
+
+
+        aboutDiv.appendChild(aboutTitle);
+        para1.appendChild(aboutP1)
+        para2.appendChild(aboutP2);
+
+        para2.appendChild(hr);
+
+        paras.appendChild(aboutTitle)
+        paras.appendChild(para1)
+        paras.appendChild(para2)
+
+
+        aboutDiv.appendChild(paras)
+
+        aboutDiv.appendChild(imgDiv)
+
+
+        section2.appendChild(aboutDiv)
+
+        main.appendChild(section2)
+
+
       
 
         // <---------------> //

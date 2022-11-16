@@ -33,6 +33,7 @@ function createNav() {
     nav.appendChild(brandDiv);
     nav.appendChild(ul);
     nav.appendChild(burger);
+    nav.id = 'nav'
 
     return nav;
 
