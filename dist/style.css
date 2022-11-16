@@ -302,11 +302,12 @@ section {
 
 #about {
     min-height: 90vh;
+    background-color: white;
 }
 
 #about h2 {
     font-size: 2rem;
-    padding-left: 54vh;
+    margin-left: 52.5vh;
 }
 
 #about-para-1 {
@@ -317,28 +318,28 @@ section {
 .about-para-2 {
 
     text-align: center;
-    padding-bottom: 10vh; 
+    padding-bottom: 8vh; 
 
 }
 
 #parasDiv {
     width: 50%;
     float: left;
-    padding-top: 20vh;
+    padding-top: 23vh;
 
 }
 
 #paraDiv1 {
     /* width: 40%; */
-    font-size: 1.25rem;
+    font-size: 18px;
     margin-left: 15vh;
-    margin-top: 5vh;
+    margin-top: 4vh;
 
 }
 
 #paraDiv2 {
     /* width: 50%; */
-    font-size: 1.25rem;
+    font-size: 18px;
     margin-left: 15vh;
     margin-top: 5vh;
 }
@@ -357,15 +358,15 @@ section {
     position: relative;
     display: inline-block;
     z-index: 10;
-    margin-top: 15vh;
-    margin-left: 25vh;
+    margin-top: 10vh;
+    margin-left: 8vh;
 }
 
 
 #outlineDiv {
     position: absolute;
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     border: 2px solid #dba931;
     top: 20px;
     left: 20px;
@@ -374,8 +375,8 @@ section {
 
 #outlineDiv2 {
     position: absolute;
-    width: 380px;
-    height: 500px;
+    width: 480px;
+    height: 600px;
     border: 2px solid #dba931;
     top: 35px;
     left: 30px;
