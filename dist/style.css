@@ -59,6 +59,7 @@ nav {
     body {
         overflow-x: hidden;
     }
+
     .nav-links {
         position: absolute;
         right: 0px;
@@ -128,6 +129,30 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 90vh;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(img/bg3.jpg);
+    }
+    20% {
+        background-image: url(img/bg4.jpg);
+    }
+    40% {
+        background-image: url(img/bg5.jpg);
+    }
+    60% {
+        background-image: url(img/background1.jpg);
+    }
 }
 
 h1 {
@@ -265,8 +290,9 @@ section {
 
 #services h2 {
     font-size: 2rem;
-    margin: 7rem 0 3rem;
+    margin: 5rem 0 3rem;
     color: black;
+    text-decoration: underline;
 }
 
 .cen {
@@ -300,14 +326,26 @@ section {
     margin: 0px 20px 0px 20px;
 }
 
+.dish-separator {
+    min-height: 50vh;
+    background-color: #aaa;
+
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/butterchicken.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 #about {
-    min-height: 90vh;
+    min-height: 95vh;
     background-color: white;
 }
 
 #about h2 {
     font-size: 2rem;
     margin-left: 52.5vh;
+    color: #dba931;
 }
 
 #about-para-1 {

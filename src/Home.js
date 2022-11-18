@@ -97,6 +97,13 @@ function renderHome() {
 
         main.appendChild(section2)
 
+         // <---------------> //
+
+         const section3 = document.createElement('section');
+         section3.classList.add("dish-separator");
+
+         main.appendChild(section3);
+
 
       
 
@@ -108,7 +115,7 @@ function renderHome() {
         servicesDiv.id = 'services';
 
         const servicesTitle = document.createElement('h2')
-        servicesTitle.innerText = "Our Services"
+        servicesTitle.innerText = "OUR SERVICES"
         servicesDiv.append(servicesTitle);
 
         const cen = document.createElement('div');
