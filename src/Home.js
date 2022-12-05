@@ -39,7 +39,7 @@ function renderHome() {
         aboutDiv.id = 'about';
 
         const aboutTitle = document.createElement('h2');
-        aboutTitle.innerText = "ABOUT US";
+        aboutTitle.innerText = "About Us";
 
         const imgDiv = document.createElement('div');
         const outlineDiv = document.createElement('div');
@@ -47,7 +47,7 @@ function renderHome() {
         outlineDiv.id = 'outlineDiv'
         outlineDiv2.id = 'outlineDiv2'
         imgDiv.id = 'imgDiv'
-        const img = new Image(500, 600); 
+        const img = new Image(); 
         img.src = "img/restaurant.jpg"
         img.id = "img2"
         imgDiv.appendChild(img);
@@ -115,7 +115,7 @@ function renderHome() {
         servicesDiv.id = 'services';
 
         const servicesTitle = document.createElement('h2')
-        servicesTitle.innerText = "OUR SERVICES"
+        servicesTitle.innerText = "Our Services"
         servicesDiv.append(servicesTitle);
 
         const cen = document.createElement('div');
