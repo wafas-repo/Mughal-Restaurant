@@ -22,22 +22,28 @@ function createFooter() {
     ul.classList.add('socials');
     
     const socialItems = ["github", "linkedin"];
+    const socialLinks = ["https://github.com/wafas-repo", "https://www.linkedin.com/in/wafaqazi/"]
     
     for (let i = 0; i < socialItems.length; i++) {
         var li = document.createElement("li");
         var link = document.createElement("a");
-        link.setAttribute('href', '#');
+        link.setAttribute('href', socialLinks[i]);
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer')
         var iTag = document.createElement('i');
         iTag.classList.add("fa", "fa-brands", "fa-"+socialItems[i])
+        link.id = socialItems[i]
         link.appendChild(iTag);
         li.appendChild(link);
         ul.appendChild(li);
     }
 
+
     footerContent.appendChild(randomAddress);
     footerContent.appendChild(randomNumber)
     footerContent.appendChild(randomEmail)
     footerTop.appendChild(ul);
+
 
     const footerBottom = document.createElement('div');
     footerBottom.classList.add('footer-bottom');

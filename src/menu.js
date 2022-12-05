@@ -11,7 +11,7 @@ function renderMenu() {
     menuText.id = "menu-text"
 
     const h1 = document.createElement('h1');
-    h1.innerHTML = 'OUR MENU'
+    h1.innerHTML = 'Our Menu'
     h1.id = "menu-title"
 
     menuText.appendChild(h1);
@@ -203,37 +203,37 @@ function renderMenu() {
             "Gulab Jamun (3pc)",
             "An all-time traditional favourite of Southeast Asia.",
             6.99,
-            5
+            6
         );
         menuGenerator(
             "Kheer",
             "Traditional rice pudding cooked fresh in house served in clay dish.",
             6.99,
-            5
+            6
         );
         menuGenerator(
             "Mango Ice Cream",
             "Fresh mango ice cream with mint leaves for garnish.",
             5.99,
-            5
+            6
         );
         menuGenerator(
             "Soft Drinks",
             "",
             1.99,
-            6
+            5
         );
         menuGenerator(
             "Pakola",
             "",
             2.99,
-            6
+            5
         );
         menuGenerator(
             "Mango Lassi",
             "Yogurt drink made with mango pulp.",
             5.99,
-            6
+            5
         );
     })();
 
