@@ -12,6 +12,8 @@ nav {
     height: 10vh;
     background-color: black;
     z-index: 999;
+    position: sticky;
+    top: 0px;
 }
 
 .brand {
@@ -39,7 +41,7 @@ nav {
 }
 
 .nav-links a:hover{
-    color: goldenrod;
+    color: #dba931;
 }
 
 .burger {
@@ -54,45 +56,6 @@ nav {
     background-color:  rgba(255, 255, 255);
     transition: all 0.3s ease;
 }
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
 
 .main {
     height: 100%; 
@@ -227,7 +190,7 @@ footer {
 }
 
 .socials a:hover i {
-    color: rgb(221, 194, 40);
+    color: #dba931;
 }
 
 .footer-bottom {
@@ -259,15 +222,13 @@ section {
     padding-bottom: 3rem;
     padding-left: 20px;
     padding-right: 20px;
-    min-height: 50vh;
-
 }
 
 #services h2 {
     font-size: 2rem;
     margin: 5rem 0 3rem;
-    color: black;
-    text-decoration: underline;
+    color: #dba931;
+    font-family: 'Eagle Lake', sans-serif;
 }
 
 .cen {
@@ -284,12 +245,12 @@ section {
 }
 
 .service h3 {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 18px;
 }
 
 .service i {
-    color: darkgoldenrod;
+    color: #dba931;
     font-size: 34px;
     margin-bottom: 30px;
 }
@@ -319,8 +280,9 @@ section {
 
 #about h2 {
     font-size: 2rem;
-    margin-left: 52.5vh;
+    text-align: center;
     color: #dba931;
+    font-family: 'Eagle Lake', sans-serif;
 }
 
 #about-para-1 {
@@ -343,27 +305,28 @@ section {
 }
 
 #paraDiv1 {
-    /* width: 40%; */
     font-size: 18px;
-    margin-left: 15vh;
     margin-top: 4vh;
 
 }
 
 #paraDiv2 {
-    /* width: 50%; */
     font-size: 18px;
-    margin-left: 15vh;
     margin-top: 5vh;
 }
 
 #about hr {
     width: 10vh;
     clear: left;
-    margin-left: 42vh;
+    margin: auto;
     background: goldenrod;
     height: 2px;
     border: goldenrod;
+}
+
+#about img {
+    width: 500px;
+    height: 600px;
 }
 
 #imgDiv {
@@ -407,6 +370,7 @@ section {
 
 #menu-title {
     color: #dba931;
+    font-family: 'Eagle Lake', sans-serif;
 }
 
 #titleDiv {
@@ -489,6 +453,7 @@ section {
     margin-bottom: 5rem;
     text-align: center;
     color: #dba931;
+    font-family: 'Eagle Lake', sans-serif;
 }
 
 .parent {
@@ -583,13 +548,14 @@ section {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #412d49a4;
+        background-color: rgba(0, 0, 0, 0.643);
         display: flex;
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
+
     .nav-links li {
         opacity: 0;
     }
@@ -605,8 +571,81 @@ section {
 
     .parent {
         grid-template-areas: "topLeft" "lowerLeft" "main" ;
+        margin: 0%;
+        padding-left: 6vh;
+    }
+
+    .right-1 {
+       padding-top: 20px;
+       padding-bottom: 20px;
+    }
+
+    .right-3 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #parasDiv {
+        margin-left: 25%;
+        padding-top: 15vh;
+    }
+
+    #imgDiv {
+        text-align: right;
+        position: relative;
+        display: inline-block;
+        z-index: 10;
+        margin-top: 5vh;
+        margin-left: 8vh;
+        margin-bottom: 10vh;
+    }
+    .menu-section {
+        padding-right: 10px;
+    }
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+
 
 
 
